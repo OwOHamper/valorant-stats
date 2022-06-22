@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "VShop",
-    "slug": "vshop",
+    "name": "vstats",
+    "slug": "vstats",
     "version": "2.3.0",
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
@@ -25,7 +25,7 @@
         "foregroundImage": "./src/assets/adaptive-icon.png",
         "backgroundColor": "#fa4454"
       },
-      "package": "dev.vasc.vshop",
+      "package": "dev.hamper.vstats",
       "versionCode": 7
     },
     "web": {
