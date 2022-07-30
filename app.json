@@ -18,7 +18,7 @@
     ],
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "dev.vasc.vshop"
+      "bundleIdentifier": "dev.hamper.vstats"
     },
     "android": {
       "adaptiveIcon": {

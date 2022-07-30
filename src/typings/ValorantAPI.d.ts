@@ -21,6 +21,20 @@ interface shopItem {
   price: number;
 }
 
+interface contract {
+  uuid: string;
+  displayName: string;
+  displayIcon: string;
+  agentName: string;
+  level: number;
+  xpInLevel: number;
+  xpNeededForNext: number;
+  totalXp: number;
+  totalXpNeededInLevel: number;
+  progression: number;
+  totalProgression: number;
+}
+
 interface nightMarketItem extends shopItem {
   discountPrice: number;
   discountPercent: number;

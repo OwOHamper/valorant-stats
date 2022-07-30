@@ -4,6 +4,7 @@ import Shop from "../views/Shop";
 import Settings from "../views/Settings";
 import NightMarket from "../views/NightMarket";
 import Profile from "../views/Profile";
+import Stats from "../views/Stats";
 
 interface props {
   setLoggedIn: Function;
@@ -11,6 +12,7 @@ interface props {
 export default function Navigation(props: PropsWithChildren<props>) {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
+    { key: "stats", title: "Stats", icon: "view-grid" },
     { key: "shop", title: "Shop", icon: "basket" },
     { key: "nightmarket", title: "Night Market", icon: "weather-night" },
     { key: "profile", title: "Profile", icon: "account" },
@@ -27,6 +29,8 @@ export default function Navigation(props: PropsWithChildren<props>) {
         return <Profile />;
       case "settings":
         return <Settings setLoggedIn={props.setLoggedIn} />;
+        case "stats":
+          return <Stats />;
     }
   };
 
